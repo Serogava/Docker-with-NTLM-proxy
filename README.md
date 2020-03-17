@@ -1,7 +1,7 @@
 
-#Настройка Debian на работу с proxy
+# Настройка Debian на работу с proxy
 
-###Настраиваем loopback интерфейс
+### Настраиваем loopback интерфейс
 Добавляем в /etc/network/interface строки с настройками дополнительного интефейса loopback
 ```
 auto lo:10
@@ -17,7 +17,7 @@ iface lo:10 inet static
 sudo systemctl restart networking
 ```
 
-####Устанавливаем и настраиваем cntlm
+#### Устанавливаем и настраиваем cntlm
 Обновляем пакеты
 ```
 sudo apt update &&  sudo apt upgrade
@@ -65,7 +65,7 @@ Listen          <IP>:<PORT>
 sudo systemctl restart cntlm
 ```
 
-####Настройка docker на работу с proxy
+#### Настройка docker на работу с proxy
 Для настройки HTTP_PROXYHTTPS_PROXYNO_PROXY необходимо выполнить коррективы в сервисе docker.service
 
 Создать директорию
